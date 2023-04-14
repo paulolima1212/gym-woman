@@ -38,6 +38,6 @@ export const CardFilter = styled('div', {
   height: '10rem',
   position: 'absolute',
   zIndex: '100',
-  background: 'rgba(230, 83, 138, 0.35)',
+  background: 'rgba(230, 83, 138, 0.55)',
   borderRadius: '8px',
 })

@@ -1,9 +1,3 @@
-import logoLight from '../../assets/logo-gym-removebg-preview.png'
-import group from '../../assets/group.jpg'
-import gain from '../../assets/gain.jpg'
-import aerobic from '../../assets/aerobic.jpg'
-import woman from '../../assets/woman.jpg'
-import { Card } from './components/card'
 import {
   AboutUs,
   CardsContainer,
@@ -13,13 +7,31 @@ import {
   TitleContainer,
   TitlePlan,
 } from './styles'
+import logoLight from '../../assets/logo-gym-removebg-preview.png'
+import group from '../../assets/group.jpg'
+import gain from '../../assets/gain.jpg'
+import aerobic from '../../assets/aerobic.jpg'
+import woman from '../../assets/woman.jpg'
+import { Card } from './components/card'
 import { Button } from '../../components/button'
 import { CardPlan } from './components/cardPlan'
 import { useNavigate } from 'react-router-dom'
 import { Footer } from './components/footer'
 
+import { useKeenSlider } from 'keen-slider/react'
+import 'keen-slider/keen-slider.min.css'
+
 export function Home() {
   const navigate = useNavigate()
+
+  const [sliderRef] = useKeenSlider({
+    mode: 'free-snap',
+    slides: {
+      origin: 'center',
+      perView: 2,
+      spacing: 15,
+    },
+  })
 
   return (
     <HomeContainer>
@@ -58,7 +70,17 @@ export function Home() {
       </AboutUs>
       <Plans>
         <TitlePlan>Planos</TitlePlan>
-        <CardPlan />
+        <div ref={sliderRef} className='keen-slider'>
+          <div className='keen-slider__slide number-slide1'>
+            <CardPlan />
+          </div>
+          <div className='keen-slider__slide number-slide2'>
+            <CardPlan />
+          </div>
+          <div className='keen-slider__slide number-slide3'>
+            <CardPlan />
+          </div>
+        </div>
       </Plans>
       <Footer />
     </HomeContainer>
