@@ -1,18 +1,24 @@
 import { Button, CardContainer, HeaderCard, ListPlan } from './styles'
 
-export function Cards() {
+interface CardsProps {
+  plan: 'basic' | 'smart' | 'premium'
+  title: string
+  price: string
+}
+
+export function Cards({ plan, title, price }: CardsProps) {
   return (
     <CardContainer>
-      <HeaderCard>
-        <strong>Basico</strong>
-        <span>R$ 59,90</span>
+      <HeaderCard plan={plan}>
+        <strong>{title}</strong>
+        <span>R$ {price}</span>
       </HeaderCard>
       <ListPlan>
         <li>Treine 2x na semana</li>
         <li>Treino personalizado</li>
         <li>App para acompanhamento</li>
       </ListPlan>
-      <Button>Selecionar</Button>
+      <Button plan={plan}>Selecionar</Button>
     </CardContainer>
   )
 }

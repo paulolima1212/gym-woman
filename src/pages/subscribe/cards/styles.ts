@@ -16,7 +16,6 @@ export const CardContainer = styled('div', {
 export const HeaderCard = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  background: '$pink-300',
   width: '95%',
   height: '5rem',
   justifyContent: 'center',
@@ -26,6 +25,20 @@ export const HeaderCard = styled('div', {
   gap: '0.6rem',
   color: '$gray-100',
   boxShadow: '0px 3px 2px rgba(0, 0, 0, 0.25)',
+
+  variants: {
+    plan: {
+      basic: {
+        background: '$pink-300',
+      },
+      smart: {
+        background: '$pink-200',
+      },
+      premium: {
+        background: '$purple',
+      },
+    },
+  },
 
   strong: {
     fontSize: '1.3rem',
@@ -47,11 +60,24 @@ export const ListPlan = styled('ul', {
 export const Button = styled('button', {
   display: 'flex',
   padding: '1rem 2rem',
-  background: '$pink-300',
   borderRadius: '16px',
   marginTop: 'auto',
   marginBottom: '1rem',
   color: '$gray-100',
   fontWeight: 'bold',
   filter: 'drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25))',
+
+  variants: {
+    plan: {
+      basic: {
+        background: '$pink-300',
+      },
+      smart: {
+        background: '$pink-200',
+      },
+      premium: {
+        background: '$purple',
+      },
+    },
+  },
 })

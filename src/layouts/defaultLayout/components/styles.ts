@@ -39,3 +39,72 @@ export const HeaderContent = styled('header', {
     maxHeight: '6.4rem',
   },
 })
+
+export const MenuToggleContainer = styled('div', {
+  position: 'relative',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  height: '100%',
+  width: '100%',
+  maxWidth: '30px',
+  minHeight: '50px',
+  cursor: 'pointer',
+})
+
+export const MenuToggle = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+
+  variants: {
+    status: {
+      isOpen: {
+        '&::before': {
+          position: 'absolute',
+          content: '',
+          width: '30px',
+          height: '3px',
+          background: '$pink-300',
+          transform: 'translateY(3px) rotate(-45deg)',
+          transition: '0.5s',
+        },
+        '&::after': {
+          position: 'absolute',
+          content: '',
+          width: '30px',
+          height: '3px',
+          background: '$pink-300',
+          transform: 'translateY(3px) rotate(45deg)',
+          transition: '0.5s',
+        },
+      },
+      isClose: {
+        '&::before': {
+          position: 'absolute',
+          content: '',
+          width: '30px',
+          height: '3px',
+          background: '$pink-300',
+          transform: 'translateY(-10px)',
+          transition: '0.5s',
+        },
+        '&::after': {
+          position: 'absolute',
+          content: '',
+          width: '30px',
+          height: '3px',
+          background: '$pink-300',
+          transform: 'translateY(10px)',
+          transition: '0.5s',
+          boxShadow: '0px -10px 0px #E6538A',
+        },
+      },
+    },
+  },
+
+  defaultVariants: {
+    status: 'isClose',
+  },
+})

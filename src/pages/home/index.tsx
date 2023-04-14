@@ -38,7 +38,7 @@ export function Home() {
       <img className='img-principal' src={woman} alt='' />
       <TitleContainer>
         <Title>
-          CONHEÇA A TUA <span>MELHOR VERSÃO!</span>
+          CONSTRUA A TUA <span>MELHOR VERSÃO!</span>
         </Title>
         <p>
           Comece hoje <br /> a contruir o seu futuro, <br />

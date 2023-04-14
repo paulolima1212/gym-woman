@@ -61,7 +61,8 @@ export const Input = styled('input', {
 
 export const Button = styled('button', {
   display: 'flex',
-  padding: '1rem 3rem',
+  padding: '1rem 5rem',
   background: '$pink-300',
   borderRadius: '16px',
+  marginTop: '1rem',
 })

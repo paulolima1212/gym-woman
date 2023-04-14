@@ -1,5 +1,10 @@
 import logo from '../../../assets/logo.png'
-import { HeaderContainer, HeaderContent } from './styles'
+import {
+  HeaderContainer,
+  HeaderContent,
+  MenuToggle,
+  MenuToggleContainer,
+} from './styles'
 
 export function Header() {
   return (
@@ -9,9 +14,9 @@ export function Header() {
           <img src={logo} alt='' />
           <h1>Academia da Mulher</h1>
         </div>
-        <nav>
-          <a href='/'>Home</a>
-        </nav>
+        <MenuToggleContainer>
+          <MenuToggle status={'isClose'} />
+        </MenuToggleContainer>
       </HeaderContent>
     </HeaderContainer>
   )

@@ -13,9 +13,9 @@ export function Subscribe() {
     <SubscribeContainer>
       <h1>Escolha seu plano</h1>
       <CardsContainer>
-        <Cards />
-        <Cards />
-        <Cards />
+        <Cards plan='basic' title='Basico' price='59.90' />
+        <Cards plan='smart' title='Smart' price='79.90' />
+        <Cards plan='premium' title='Premium' price='99.90' />
       </CardsContainer>
       <BoxForm>
         <h2>Preencha seus dados:</h2>
