@@ -10,7 +10,6 @@ export const CardContainer = styled('div', {
   color: '$black',
   borderRadius: '5px',
   filter: 'drop-shadow(-2px 2px 2px rgba(255, 124, 173, 0.5))',
-  padding: '0 1rem',
 })
 
 export const HeaderCard = styled('div', {
@@ -19,10 +18,9 @@ export const HeaderCard = styled('div', {
   height: '5rem',
   justifyContent: 'center',
   alignItems: 'center',
-  borderRadius: '6px',
+  borderRadius: '5px',
   gap: '0.6rem',
   color: '$gray-100',
-  boxShadow: '0px 3px 2px rgba(0, 0, 0, 0.25)',
 
   variants: {
     plan: {
@@ -38,8 +36,9 @@ export const HeaderCard = styled('div', {
     },
     selected: {
       true: {
-        width: '95%',
+        width: '85%',
         marginTop: '-2.5rem',
+        boxShadow: '0px 3px 2px rgba(0, 0, 0, 0.25)',
       },
       false: {
         width: '100%',
@@ -67,6 +66,13 @@ export const ListPlan = styled('ul', {
   width: '100%',
   alignItems: 'center',
   marginTop: '2rem',
+  padding: '0 1.1rem',
+  gap: '0.8rem',
+  marginBottom: '1rem',
+
+  li: {
+    textAlign: 'left',
+  },
 })
 
 export const Button = styled('button', {
