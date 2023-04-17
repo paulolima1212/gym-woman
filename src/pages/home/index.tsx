@@ -26,6 +26,7 @@ export function Home() {
 
   const [sliderRef] = useKeenSlider({
     mode: 'free-snap',
+    initial: 1,
     slides: {
       origin: 'center',
       perView: 2,
@@ -63,7 +64,7 @@ export function Home() {
             nisso, criamos um espaço onde qualquer mulher sinta-se a vontade em
             treinar, melhorar sua saúde física e mental, em um ambiente
             exclusivo. <br />
-            <a href='/more'>Saiba mais...</a>
+            <a href='/about'>Saiba mais...</a>
           </p>
         </div>
         <img src={logoLight} alt='' />
