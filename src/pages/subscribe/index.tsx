@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Cards } from './cards'
 import {
   BoxForm,
@@ -40,7 +41,7 @@ export function Subscribe() {
           <Input type='text' />
         </FieldContainer>
         <Button>Confirmar</Button>
-        <a href='/'>Voltar</a>
+        <Link to={'/'}>Voltar</Link>
       </BoxForm>
     </SubscribeContainer>
   )

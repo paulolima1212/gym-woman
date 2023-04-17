@@ -15,15 +15,13 @@ import woman from '../../assets/woman.jpg'
 import { Card } from './components/card'
 import { Button } from '../../components/button'
 import { CardPlan } from './components/cardPlan'
-import { useNavigate } from 'react-router-dom'
 import { Footer } from './components/footer'
+import { Link } from 'react-router-dom'
 
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
 
 export function Home() {
-  const navigate = useNavigate()
-
   const [sliderRef] = useKeenSlider({
     mode: 'free-snap',
     initial: 1,
@@ -64,7 +62,7 @@ export function Home() {
             nisso, criamos um espaço onde qualquer mulher sinta-se a vontade em
             treinar, melhorar sua saúde física e mental, em um ambiente
             exclusivo. <br />
-            <a href='/about'>Saiba mais...</a>
+            <Link to={'/about'}>Saiba mais...</Link>
           </p>
         </div>
         <img src={logoLight} alt='' />
