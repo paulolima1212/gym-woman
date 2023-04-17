@@ -71,13 +71,13 @@ export function Home() {
         <TitlePlan>Planos</TitlePlan>
         <div ref={sliderRef} className='keen-slider'>
           <div className='keen-slider__slide number-slide1'>
-            <CardPlan />
+            <CardPlan title='Basic' url='/basic' image={woman} />
           </div>
           <div className='keen-slider__slide number-slide2'>
-            <CardPlan />
+            <CardPlan title='Smart' url='/smart' image={group} />
           </div>
           <div className='keen-slider__slide number-slide3'>
-            <CardPlan />
+            <CardPlan title='Premium' url='/premium' image={aerobic} />
           </div>
         </div>
       </Plans>

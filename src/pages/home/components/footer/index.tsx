@@ -16,27 +16,27 @@ export function Footer() {
         </div>
         <div className='fields flex'>
           <span>Cel:</span>
-          <strong>(21) 9888-8888</strong>
-        </div>
-        <div className='fields flex'>
-          <span>Cel:</span>
-          <strong>(21) 9999-9999</strong>
+          <strong>(21) 97234-3410</strong>
         </div>
         <div className='fields flex'>
           <span>E-mail:</span>
-          <strong>gymwoman@gmail.com</strong>
+          <strong>academiadamulher@gmail.com</strong>
         </div>
         <div className='fields flex'>
           <span>End:</span>
-          <strong>
-            Rua vinte e dois, n 1999, Joaquin de Oliveira - Itaborai
-          </strong>
+          <strong>R. Raimundo de Farias - Centro, Itaboraí - RJ</strong>
         </div>
       </Fields>
       <SocialMedia>
-        <FacebookLogo size={32} color='#e6538a' weight='duotone' />
-        <InstagramLogo size={32} color='#e6538a' weight='duotone' />
-        <WhatsappLogo size={32} color='#e6538a' weight='duotone' />
+        <a href='https://www.facebook.com/pages/Academia-da-Mulher-Fernanda-Morisco/1147590872069498'>
+          <FacebookLogo size={32} color='#e6538a' weight='duotone' />
+        </a>
+        <a href='https://www.instagram.com/academiadamulher.itaborai/'>
+          <InstagramLogo size={32} color='#e6538a' weight='duotone' />
+        </a>
+        <a href='https://wa.me/5521972343410'>
+          <WhatsappLogo size={32} color='#e6538a' weight='duotone' />
+        </a>
       </SocialMedia>
     </FooterContainer>
   )

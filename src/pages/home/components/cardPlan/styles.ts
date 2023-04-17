@@ -1,5 +1,4 @@
 import { styled } from '../../../../styles'
-import woman from '../../../../assets/woman.jpg'
 
 export const CardPlanContainer = styled('div', {
   display: 'flex',
@@ -11,7 +10,6 @@ export const CardPlanContainer = styled('div', {
   overflow: 'hidden',
   position: 'relative',
 
-  backgroundImage: `url("${woman}")`,
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',

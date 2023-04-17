@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Button, CardContainer, HeaderCard, ListPlan } from './styles'
 
 interface CardsProps {
@@ -7,9 +8,15 @@ interface CardsProps {
 }
 
 export function Cards({ plan, title, price }: CardsProps) {
+  const [selected, setSelected] = useState(false)
+
+  function handleChangePlan() {
+    setSelected((prev) => !prev)
+  }
+
   return (
     <CardContainer>
-      <HeaderCard plan={plan}>
+      <HeaderCard selected={selected} plan={plan}>
         <strong>{title}</strong>
         <span>R$ {price}</span>
       </HeaderCard>
@@ -18,7 +25,9 @@ export function Cards({ plan, title, price }: CardsProps) {
         <li>Treino personalizado</li>
         <li>App para acompanhamento</li>
       </ListPlan>
-      <Button plan={plan}>Selecionar</Button>
+      <Button onClick={handleChangePlan} plan={plan}>
+        Selecionar
+      </Button>
     </CardContainer>
   )
 }

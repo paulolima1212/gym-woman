@@ -16,11 +16,9 @@ export const CardContainer = styled('div', {
 export const HeaderCard = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  width: '95%',
   height: '5rem',
   justifyContent: 'center',
   alignItems: 'center',
-  marginTop: '-2.5rem',
   borderRadius: '6px',
   gap: '0.6rem',
   color: '$gray-100',
@@ -38,6 +36,20 @@ export const HeaderCard = styled('div', {
         background: '$purple',
       },
     },
+    selected: {
+      true: {
+        width: '95%',
+        marginTop: '-2.5rem',
+      },
+      false: {
+        width: '100%',
+        marginTop: 0,
+      },
+    },
+  },
+
+  defaultVariants: {
+    selected: 'false',
   },
 
   strong: {
