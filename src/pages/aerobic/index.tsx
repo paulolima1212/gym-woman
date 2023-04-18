@@ -9,6 +9,7 @@ import {
   TitleContainer,
 } from './styles'
 import { Button } from '../../components/button'
+import { Link } from 'react-router-dom'
 
 export function Aerobic() {
   return (
@@ -40,6 +41,7 @@ export function Aerobic() {
       <strong>Melhore 1% todos os dias.</strong>
       <ButtonContainer>
         <Button title='Inscreva-se' url='/subscribe' />
+        <Link to={'/'}>Voltar</Link>
       </ButtonContainer>
     </MainContainer>
   )

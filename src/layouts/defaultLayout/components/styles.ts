@@ -7,6 +7,8 @@ export const HeaderContainer = styled('div', {
   display: 'flex',
   alignItems: 'center',
   padding: '0 2.5rem',
+  filter: 'drop-shadow(0px 2px 3px rgba(230, 83, 138, 0.5))',
+  marginBottom: '1.5rem',
 })
 
 export const HeaderContent = styled('header', {

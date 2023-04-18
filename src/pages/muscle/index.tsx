@@ -9,6 +9,7 @@ import {
   TitleContainer,
 } from './styles'
 import { Button } from '../../components/button'
+import { Link } from 'react-router-dom'
 
 export function Muscle() {
   return (
@@ -42,6 +43,7 @@ export function Muscle() {
       </strong>
       <ButtonContainer>
         <Button title='Inscreva-se' url='/subscribe' />
+        <Link to={'/'}>Voltar</Link>
       </ButtonContainer>
     </MainContainer>
   )

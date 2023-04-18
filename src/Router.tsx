@@ -6,6 +6,9 @@ import { MoreInfo } from './pages/more'
 import { Muscle } from './pages/muscle'
 import { Aerobic } from './pages/aerobic'
 import { Group } from './pages/group'
+import { Premium } from './pages/premium'
+import { Basic } from './pages/basic'
+import { Smart } from './pages/smart'
 
 export function Router() {
   return (
@@ -17,6 +20,9 @@ export function Router() {
         <Route path='/muscle' element={<Muscle />} />
         <Route path='/aerobic' element={<Aerobic />} />
         <Route path='/group' element={<Group />} />
+        <Route path='/premium' element={<Premium />} />
+        <Route path='/basic' element={<Basic />} />
+        <Route path='/smart' element={<Smart />} />
       </Route>
     </Routes>
   )

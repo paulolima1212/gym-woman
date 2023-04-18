@@ -1,24 +1,15 @@
+import { FolderNotchMinus } from '@phosphor-icons/react'
 import { styled } from '../../styles'
 
 export const MainContainer = styled('main', {
   display: 'flex',
   flexDirection: 'column',
-  width: '100%',
-
-  strong: {
-    fontSize: '1.6rem',
-    color: '$pink-300',
-    maxWidth: '90%',
-    margin: '0 auto 2rem',
-    textAlign: 'center',
-  },
+  justifyContent: 'center',
 })
 
 export const TitleContainer = styled('div', {
   display: 'flex',
   width: '100%',
-  gap: '1rem',
-  justifyContent: 'center',
 })
 
 export const Title = styled('h2', {
@@ -27,34 +18,48 @@ export const Title = styled('h2', {
   color: '$pink-300',
   fontSize: '2.4rem',
   alignItems: 'center',
+  margin: '1rem auto',
+  fontWeight: 'initial',
 
   '&::after': {
     content: '',
     flex: 1,
-    minWidth: '21rem',
-    height: '0.3rem',
+    minWidth: '17rem',
+    height: '0.2rem',
     background: '$pink-300',
   },
 })
 
 export const Text = styled('p', {
   display: 'flex',
-  fontSize: '1.2rem',
+  fontSize: '1.4rem',
   color: '$gray-200',
-  maxWidth: '90%',
+  maxWidth: '80%',
+  lineHeight: '140%',
   margin: '0 auto',
   padding: '1rem 0',
 })
 
-export const ImageContainer = styled('div', {
+export const ContainerPlan = styled('div', {
   display: 'flex',
-  maxWidth: '90%',
-  maxHeight: '20.7rem',
+  flexDirection: 'column',
+  width: '80%',
+  border: 'solid 2px $pink-300',
   margin: '2rem auto',
+  borderRadius: '8px',
+})
 
-  img: {
-    width: '100%',
-    objectFit: 'contain',
+export const List = styled('ul', {
+  display: 'flex',
+  flexDirection: 'column',
+  fontSize: '1.6rem',
+  color: '$gray-200',
+  padding: '5rem 1.5rem',
+  gap: '2.5rem',
+
+  li: {
+    display: 'flex',
+    gap: '1rem',
   },
 })
 

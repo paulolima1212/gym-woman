@@ -60,8 +60,15 @@ export const ImageContainer = styled('div', {
 
 export const ButtonContainer = styled('div', {
   display: 'flex',
+  flexDirection: 'column',
   width: '100%',
   alignItems: 'center',
   justifyContent: 'center',
   margin: '1rem 0',
+  gap: '1rem',
+
+  a: {
+    color: '$gray-200',
+    margin: '2rem 0',
+  },
 })
