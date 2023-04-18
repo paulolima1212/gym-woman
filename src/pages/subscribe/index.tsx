@@ -7,12 +7,16 @@ import {
   FieldContainer,
   Input,
   SubscribeContainer,
+  Title,
+  TitleContainer,
 } from './styles'
 
 export function Subscribe() {
   return (
     <SubscribeContainer>
-      <h1>Escolha seu plano</h1>
+      <TitleContainer>
+        <Title>ESCOLHA SEU PLANO</Title>
+      </TitleContainer>
       <CardsContainer>
         <Cards plan='basic' title='Basico' price='59.90' />
         <Cards plan='smart' title='Smart' price='79.90' />

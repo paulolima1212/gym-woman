@@ -25,23 +25,23 @@ export function Basic() {
       <ContainerPlan>
         <List>
           <li>
-            <CheckCircle color='#e6538a' weight='duotone' />{' '}
+            <CheckCircle size={32} color='#e6538a' weight='duotone' />{' '}
             <span>Treinos personalizados</span>
           </li>
           <li>
-            <CheckCircle color='#e6538a' weight='duotone' />{' '}
+            <CheckCircle size={32} color='#e6538a' weight='duotone' />{' '}
             <span>Gym Woman App</span>
           </li>
           <li>
-            <CheckCircle color='#e6538a' weight='duotone' />{' '}
+            <CheckCircle size={32} color='#e6538a' weight='duotone' />{' '}
             <span>Mentoria e aconpanhamento</span>
           </li>
           <li>
-            <CheckCircle color='#e6538a' weight='duotone' />{' '}
+            <CheckCircle size={32} color='#e6538a' weight='duotone' />{' '}
             <span>Treinos personalizados</span>
           </li>
           <li>
-            <CheckCircle color='#e6538a' weight='duotone' />{' '}
+            <CheckCircle size={32} color='#e6538a' weight='duotone' />{' '}
             <span>Treine quantas vezes quiser</span>
           </li>
         </List>

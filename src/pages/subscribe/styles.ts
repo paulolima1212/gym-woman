@@ -66,3 +66,27 @@ export const Button = styled('button', {
   borderRadius: '16px',
   marginTop: '1rem',
 })
+
+export const TitleContainer = styled('div', {
+  display: 'flex',
+  width: '100%',
+  gap: '1rem',
+  justifyContent: 'center',
+  marginBottom: '2rem',
+})
+
+export const Title = styled('h2', {
+  display: 'flex',
+  gap: '1rem',
+  color: '$pink-300',
+  fontSize: '2rem',
+  alignItems: 'center',
+
+  '&::after': {
+    content: '',
+    flex: 1,
+    minWidth: '12rem',
+    height: '0.3rem',
+    background: '$pink-300',
+  },
+})

@@ -60,6 +60,7 @@ export const List = styled('ul', {
   li: {
     display: 'flex',
     gap: '1rem',
+    alignItems: 'center',
   },
 })
 
