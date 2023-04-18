@@ -3,6 +3,9 @@ import { Home } from './pages/home'
 import { DefaultLayout } from './layouts/defaultLayout/defaultLayout'
 import { Subscribe } from './pages/subscribe'
 import { MoreInfo } from './pages/more'
+import { Muscle } from './pages/muscle'
+import { Aerobic } from './pages/aerobic'
+import { Group } from './pages/group'
 
 export function Router() {
   return (
@@ -11,6 +14,9 @@ export function Router() {
         <Route path='/' element={<Home />} />
         <Route path='/subscribe' element={<Subscribe />} />
         <Route path='/about' element={<MoreInfo />} />
+        <Route path='/muscle' element={<Muscle />} />
+        <Route path='/aerobic' element={<Aerobic />} />
+        <Route path='/group' element={<Group />} />
       </Route>
     </Routes>
   )

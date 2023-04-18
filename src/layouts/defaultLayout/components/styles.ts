@@ -3,7 +3,7 @@ import { keyframes, styled } from '../../../styles'
 
 export const HeaderContainer = styled('div', {
   height: '7rem',
-  background: '$gray-700',
+  background: '$gray-900',
   display: 'flex',
   alignItems: 'center',
   padding: '0 2.5rem',

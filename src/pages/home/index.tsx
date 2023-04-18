@@ -46,9 +46,15 @@ export function Home() {
         <Button title='Inscreva-se' url='subscribe' />
       </TitleContainer>
       <CardsContainer>
-        <Card title='Musculação' img01={gain} img02='' />
-        <Card title='Aeróbico' img01={aerobic} img02='' />
-        <Card title='Aulas em grupo' img01={group} img02='' />
+        <Link to={'/muscle'}>
+          <Card title='Musculação' img01={gain} img02='' />
+        </Link>
+        <Link to={'/aerobic'}>
+          <Card title='Aeróbico' img01={aerobic} img02='' />
+        </Link>
+        <Link to={'/group'}>
+          <Card title='Aulas em grupo' img01={group} img02='' />
+        </Link>
       </CardsContainer>
       <AboutUs>
         <h2>Sobre nós</h2>
